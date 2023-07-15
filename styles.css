@@ -12,7 +12,7 @@ body {
     cursor: pointer;
 }
 .dropdown a{
-    :display: block;
+    display: block;
 color: black;
 text-decoration: none;
 padding: 10px 15px;

@@ -27,3 +27,9 @@ padding: 10px 15px;
 .dropdown:hover .content{
     display: block;
 }
+.dropdown:hover button{
+    background-color: gray;
+}
+.dropdown a:hover{
+    background-color: gray;
+}

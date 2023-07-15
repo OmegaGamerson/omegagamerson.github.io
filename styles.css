@@ -3,3 +3,11 @@ body {
     background: rgba(53, 2, 108, 0.908);
     text-align: center;
 }
+
+.dropdown button{
+    background-color: rgb(137, 5, 5);
+    color: white;
+    padding : 10px 15px;
+    border: none;
+    cursor: pointer;
+}

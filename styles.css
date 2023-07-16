@@ -6,7 +6,7 @@ body {
   
   .dropdown button {
     background-color: rgb(71, 71, 71);
-    color: white;
+    color: rgb(107, 107, 107);
     padding: 10px 15px;
     border: none;
     cursor: pointer;

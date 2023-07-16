@@ -6,6 +6,19 @@
     <title>OmegaVape Client</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+      body {
+        background: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+        background-size: 200% auto;
+        animation: gradientAnimation 5s linear infinite;
+      }
+  
+      @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
+    <style>
         /* Style the anchor link */
         a {
           display: inline-block;

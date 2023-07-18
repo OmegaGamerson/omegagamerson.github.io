@@ -38,4 +38,30 @@ body {
   .dropdown a:hover {
     background-color: gray;
   }
+
+  .navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar li a:hover {
+    color: #ff0;
+  }
   

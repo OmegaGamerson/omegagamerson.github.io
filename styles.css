@@ -32,9 +32,9 @@ body {
   }
   
   .dropdown:hover button {
-    background-color: gray;
+    background-color: rgb(140, 2, 182);
   }
   
   .dropdown a:hover {
-    background-color: gray;
+    background-color: rgb(69, 11, 107);
   }

@@ -73,8 +73,11 @@ body {
     height: calc(100vh - 40px); /* Subtract the header height */
   }
 
-  a.button-link {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-  }
+/* Your existing CSS styles for body, dropdown, header, etc. */
+
+a.button-link {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}

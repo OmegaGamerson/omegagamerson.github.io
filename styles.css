@@ -73,18 +73,3 @@ body {
     height: calc(100vh - 40px); /* Subtract the header height */
   }
 
-  body {
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  .animated-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle, #ff0000, #00ff00, #0000ff);
-    z-index: -1;
-  }
-  

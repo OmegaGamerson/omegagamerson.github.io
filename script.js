@@ -20,3 +20,15 @@ urlInput.addEventListener('keypress', (event) => {
     loadURL();
   }
 });
+
+document.addEventListener("mousemove", (event) => {
+  const background = document.querySelector(".animated-background");
+  const mouseX = event.pageX;
+  const mouseY = event.pageY;
+
+  // Adjust the amount of movement by changing the values (e.g., 10)
+  const moveX = mouseX / 10;
+  const moveY = mouseY / 10;
+
+  background.style.backgroundPosition = `calc(50% + ${moveX}px) calc(50% + ${moveY}px)`;
+});

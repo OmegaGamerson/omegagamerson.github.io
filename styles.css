@@ -1,83 +1,127 @@
-body {
-    margin: 0;
-    background: rgba(53, 2, 108, 0.908);
-    text-align: center;
-  }
-  
-  .dropdown button {
-    background-color: rgb(51, 32, 136);
-    color: rgb(30, 20, 88);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
-  }
-  
-  .dropdown .content {
-    display: none;
-    position: absolute;
-    background-color: rgb(68, 38, 134);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.601);
-  }
-  
-  .dropdown:hover .content {
-    display: block;
-  }
-  
-  .dropdown:hover button {
-    background-color: rgb(140, 2, 182);
-  }
-  
-  .dropdown a:hover {
-    background-color: rgb(69, 11, 107);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-  body {
-    font-family: Arial, sans-serif;
+* {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  #urlInput {
-    padding: 5px;
-    width: 300px;
-    margin-right: 10px;
-  }
-  
-  #goButton {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  main {
+}
+
+body {
+    background-image: linear-gradient(to right, #570404, #333);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: calc(100vh - 40px); /* Subtract the header height */
-  }
-
-/* Your existing CSS styles for body, dropdown, header, etc. */
-
-a.button-link {
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
+    align-items: center; /* Corrected "align items" to "align-items" */
 }
+
+.container {
+    width: 90%;
+    height: 640px;
+    background-image: linear-gradient(to right, #570404ac 30%, #333333c2),
+    url(images/poggersonchannel.jpg);
+}
+
+.container:hover {
+    background-image: linear-gradient(to right, #570404ac 30%, #333333),
+    url(images/poggersonchannel.jpg);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.content {
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.content p {
+    /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */
+    initial-letter: 2;
+    width: 420px;
+    padding: 20px;
+}
+
+.content button {
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.content button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ... Your existing CSS styles ... */
+
+body {
+    background-image: linear-gradient(to right, #570404, #333);
+    height: 100vh;
+    margin: 0; /* Add margin: 0 to reset default margin */
+    display: flex;
+    flex-direction: column; /* Add this line to make the content stack vertically */
+    align-items: center; /* Align items in the center horizontally */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.container {
+    width: 90%;
+    height: 640px;
+    background-image: linear-gradient(to right, #570404ac 30%, #333333c2),
+    url(images/poggersonchannel.jpg);
+}
+
+.container:hover {
+    background-image: linear-gradient(to right, #570404ac 30%, #333333),
+    url(images/poggersonchannel.jpg);
+}
+
+header {
+    position: fixed; /* Add this line to fix the header at the top */
+    top: 0; /* Add this line to position it at the top */
+    left: 0; /* Add this line to align it to the left */
+    width: 100%; /* Add this line to make it full-width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333; /* Add background color for the header */
+    color: #fff; /* Add text color for the header */
+}
+
+/* ... Your existing CSS styles for the logo, ul, and other elements ... */

@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; /* Corrected "align items" to "align-items" */
+    align-items: center;
 }
 
 .container {
@@ -41,6 +41,7 @@ a {
 .logo {
     font-size: 30px;
     text-transform: uppercase;
+    margin-left: 20px; /* Adjust the value as needed to set the left margin */
 }
 
 ul {
@@ -67,7 +68,6 @@ ul a:hover {
 }
 
 .content p {
-    /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */
     initial-letter: 2;
     width: 420px;
     padding: 20px;
@@ -89,39 +89,3 @@ ul a:hover {
 
 /* ... Your existing CSS styles ... */
 
-body {
-    background-image: linear-gradient(to right, #570404, #333);
-    height: 100vh;
-    margin: 0; /* Add margin: 0 to reset default margin */
-    display: flex;
-    flex-direction: column; /* Add this line to make the content stack vertically */
-    align-items: center; /* Align items in the center horizontally */
-    justify-content: flex-start; /* Align content to the top */
-}
-
-.container {
-    width: 90%;
-    height: 640px;
-    background-image: linear-gradient(to right, #570404ac 30%, #333333c2),
-    url(images/poggersonchannel.jpg);
-}
-
-.container:hover {
-    background-image: linear-gradient(to right, #570404ac 30%, #333333),
-    url(images/poggersonchannel.jpg);
-}
-
-header {
-    position: fixed; /* Add this line to fix the header at the top */
-    top: 0; /* Add this line to position it at the top */
-    left: 0; /* Add this line to align it to the left */
-    width: 100%; /* Add this line to make it full-width */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #333; /* Add background color for the header */
-    color: #fff; /* Add text color for the header */
-}
-
-/* ... Your existing CSS styles for the logo, ul, and other elements ... */

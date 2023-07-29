@@ -65,7 +65,7 @@ ul a:hover {
     font-size: 55px;
     text-transform: uppercase;
 }
-
+ 
 .content p {
     /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */
     initial-letter: 2;

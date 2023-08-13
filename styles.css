@@ -37,6 +37,7 @@ header {
     padding: 10px;
 }
 
+
 .content {
     width: 100%; /* Adjust this as necessary; making this value 100% means it should take up the full width of its parent element */
     margin-top: 10px; /* Creates space between the navigation bar and the content below it */

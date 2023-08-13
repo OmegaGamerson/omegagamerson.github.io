@@ -1,40 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-{ font-family: 'Ubuntu', sans-serif; margin: 0; padding: 0; }
-body { background-image: linear-gradient(to right, #570404, #333); height: 100vh; display: flex; justify-content: center; align-items: center; /* Corrected "align items" to "align-items" */ }
+/* You might want to target specific elements for the following styles */
 
-.container { width: 90%; height: 640px; background-image: linear-gradient(to right, #570404ac 30%, #333333c2), url(images/poggersonchannel.jpg); }
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #570404, #333);
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+}
 
-.container:hover { background-image: linear-gradient(to right, #570404ac 30%, #333333), url(images/poggersonchannel.jpg); }
+.container {
+  width: 90%;
+  height: 640px;
+  background-image: linear-gradient(to right, #570404ac 30%, #333333c2), url(images/poggersonchannel.jpg);
+}
 
-header { display: flex; align-items: center; justify-content: space-between; padding: 10px; }
+.container:hover {
+  background-image: linear-gradient(to right, #570404ac 30%, #333333), url(images/poggersonchannel.jpg);
+}
 
-a { color: #fff; text-decoration: none; }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
 
-.logo { font-size: 30px; text-transform: uppercase; }
+/* Other styles for logo, ul, and other elements */
 
-ul { width: 60%; list-style: none; display: flex; justify-content: space-evenly; }
+.content p::first-letter {
+  font-size: 2em; /* Adjust the size as needed */
+}
 
-ul a:hover { border-bottom: 2px solid #fff; }
+.content button {
+  font-size: 30px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+}
 
-.content { width: 50%; margin-top: 77px; padding: 30px; color: #fff; }
-
-.content h2 { font-size: 55px; text-transform: uppercase; }
-
-.content p { /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */ initial-letter: 2; width: 420px; padding: 20px; }
-
-.content button { font-size: 30px; padding: 6px 10px; border-radius: 10px; border: none; }
-
-.content button:hover { background-color: transparent; border: 2px solid #fff; color: #fff; cursor: pointer; }
-
-/* ... Your existing CSS styles ... */
-
-body { background-image: linear-gradient(to right, #570404, #333); height: 100vh; margin: 0; /* Add margin: 0 to reset default margin / display: flex; flex-direction: column; / Add this line to make the content stack vertically / align-items: center; / Align items in the center horizontally / justify-content: flex-start; / Align content to the top */ }
-
-.container { width: 90%; height: 640px; background-image: linear-gradient(to right, #570404ac 30%, #333333c2), url(images/poggersonchannel.jpg); }
-
-.container:hover { background-image: linear-gradient(to right, #570404ac 30%, #333333), url(images/poggersonchannel.jpg); }
-
-header { position: fixed; /* Add this line to fix the header at the top / top: 0; / Add this line to position it at the top / left: 0; / Add this line to align it to the left / width: 100%; / Add this line to make it full-width / display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #333; / Add background color for the header / color: #fff; / Add text color for the header */ }
-
-/* ... Your existing CSS styles for the logo, ul, and other elements ... */
+.content button:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}

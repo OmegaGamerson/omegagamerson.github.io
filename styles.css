@@ -27,36 +27,19 @@ body {
 }
 
 header {
+    position: fixed; /* Keeps the navigation bar stuck at the top */
+    top: 0; /* Positions it at the very top of the page */
+    left: 0; /* Positions it at the very left of the page */
+    width: 100%; /* Makes sure it spans the entire width of the page */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.logo {
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-ul {
-    width: 60%;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-ul a:hover {
-    border-bottom: 2px solid #fff;
-}
-
 .content {
-    width: 50%;
-    margin-top: 77px;
+    width: 100%; /* Adjust this as necessary; making this value 100% means it should take up the full width of its parent element */
+    margin-top: 10px; /* Creates space between the navigation bar and the content below it */
     padding: 30px;
     color: #fff;
 }
@@ -64,7 +47,9 @@ ul a:hover {
 .content h2 {
     font-size: 55px;
     text-transform: uppercase;
+    margin-left: 0; /* Ensures the "OMEGAVAPE" text starts at the very left of its container */
 }
+
  
 .content p {
     /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */

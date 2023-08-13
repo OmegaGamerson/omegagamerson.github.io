@@ -1,113 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-* {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+{ font-family: 'Ubuntu', sans-serif; margin: 0; padding: 0; }
+body { background-image: linear-gradient(to right, #570404, #333); height: 100vh; display: flex; justify-content: center; align-items: center; /* Corrected "align items" to "align-items" */ }
 
-body {
-    background-image: linear-gradient(to right, #570404, #333);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Corrected "align items" to "align-items" */
-}
+.container { width: 90%; height: 640px; background-image: linear-gradient(to right, #570404ac 30%, #333333c2), url(images/poggersonchannel.jpg); }
 
-.container {
-    width: 90%;
-    height: 640px;
-    background-image: linear-gradient(to right, #570404ac 30%, #333333c2),
-    url(images/poggersonchannel.jpg);
-}
+.container:hover { background-image: linear-gradient(to right, #570404ac 30%, #333333), url(images/poggersonchannel.jpg); }
 
-.container:hover {
-    background-image: linear-gradient(to right, #570404ac 30%, #333333),
-    url(images/poggersonchannel.jpg);
-}
+header { display: flex; align-items: center; justify-content: space-between; padding: 10px; }
 
-header {
-    position: fixed; /* Keeps the navigation bar stuck at the top */
-    top: 0; /* Positions it at the very top of the page */
-    left: 0; /* Positions it at the very left of the page */
-    width: 100%; /* Makes sure it spans the entire width of the page */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
+a { color: #fff; text-decoration: none; }
 
+.logo { font-size: 30px; text-transform: uppercase; }
 
-.content {
-    width: 100%; /* Adjust this as necessary; making this value 100% means it should take up the full width of its parent element */
-    margin-top: 10px; /* Creates space between the navigation bar and the content below it */
-    padding: 30px;
-    color: #fff;
-}
+ul { width: 60%; list-style: none; display: flex; justify-content: space-evenly; }
 
-.content h2 {
-    font-size: 55px;
-    text-transform: uppercase;
-    margin-left: 0; /* Ensures the "OMEGAVAPE" text starts at the very left of its container */
-}
+ul a:hover { border-bottom: 2px solid #fff; }
 
- 
-.content p {
-    /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */
-    initial-letter: 2;
-    width: 420px;
-    padding: 20px;
-}
+.content { width: 50%; margin-top: 77px; padding: 30px; color: #fff; }
 
-.content button {
-    font-size: 30px;
-    padding: 6px 10px;
-    border-radius: 10px;
-    border: none;
-}
+.content h2 { font-size: 55px; text-transform: uppercase; }
 
-.content button:hover {
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    cursor: pointer;
-}
+.content p { /* Initial-letter property should be "initial-letter" instead of "initial-letter: 2px" */ initial-letter: 2; width: 420px; padding: 20px; }
+
+.content button { font-size: 30px; padding: 6px 10px; border-radius: 10px; border: none; }
+
+.content button:hover { background-color: transparent; border: 2px solid #fff; color: #fff; cursor: pointer; }
 
 /* ... Your existing CSS styles ... */
 
-body {
-    background-image: linear-gradient(to right, #570404, #333);
-    height: 100vh;
-    margin: 0; /* Add margin: 0 to reset default margin */
-    display: flex;
-    flex-direction: column; /* Add this line to make the content stack vertically */
-    align-items: center; /* Align items in the center horizontally */
-    justify-content: flex-start; /* Align content to the top */
-}
+body { background-image: linear-gradient(to right, #570404, #333); height: 100vh; margin: 0; /* Add margin: 0 to reset default margin / display: flex; flex-direction: column; / Add this line to make the content stack vertically / align-items: center; / Align items in the center horizontally / justify-content: flex-start; / Align content to the top */ }
 
-.container {
-    width: 90%;
-    height: 640px;
-    background-image: linear-gradient(to right, #570404ac 30%, #333333c2),
-    url(images/poggersonchannel.jpg);
-}
+.container { width: 90%; height: 640px; background-image: linear-gradient(to right, #570404ac 30%, #333333c2), url(images/poggersonchannel.jpg); }
 
-.container:hover {
-    background-image: linear-gradient(to right, #570404ac 30%, #333333),
-    url(images/poggersonchannel.jpg);
-}
+.container:hover { background-image: linear-gradient(to right, #570404ac 30%, #333333), url(images/poggersonchannel.jpg); }
 
-header {
-    position: fixed; /* Add this line to fix the header at the top */
-    top: 0; /* Add this line to position it at the top */
-    left: 0; /* Add this line to align it to the left */
-    width: 100%; /* Add this line to make it full-width */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #333; /* Add background color for the header */
-    color: #fff; /* Add text color for the header */
-}
+header { position: fixed; /* Add this line to fix the header at the top / top: 0; / Add this line to position it at the top / left: 0; / Add this line to align it to the left / width: 100%; / Add this line to make it full-width / display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #333; / Add background color for the header / color: #fff; / Add text color for the header */ }
 
 /* ... Your existing CSS styles for the logo, ul, and other elements ... */

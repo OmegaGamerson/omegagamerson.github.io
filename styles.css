@@ -50,14 +50,14 @@ header ul {
   }
   
   header ul li a:hover {
-    color: #f00; /* Change the color on hover (you can replace #f00 with your preferred color) */
+    color: rgb(105, 6, 6); /* Change the color on hover (you can replace #f00 with your preferred color) */
   }
   
 
 /* Other styles for logo, ul, and other elements */
 
 .content p::first-letter {
-  font-size: 2em; /* Adjust the size as needed */
+  font-size: 4em; /* Adjust the size as needed */
 }
 
 .content button {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #151515; /* Added '#' before color code */
+        }
+        .circle1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 3px solid #fe4444; /* Removed '25' after color code */
+            border-top: 3px solid red;
+            animation: ani 3s linear infinite; /* Added 'infinite' */
+        }
+        .circle2 {
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            border: 3px solid #fe4444; /* Removed '25' after color code */
+            border-top: 3px solid #f9ce24;
+            animation: ani 2s linear infinite; /* Added 'infinite' */
+        }
+        @keyframes ani {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Removed unnecessary div tag -->
+        <div class="circle1"></div> <!-- Closed the div tag -->
+        <div class="circle2"></div>
+    </div>
+</body>
+</html>

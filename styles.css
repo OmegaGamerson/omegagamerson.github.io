@@ -57,7 +57,7 @@ header ul {
 /* Other styles for logo, ul, and other elements */
 
 .content p::first-letter {
-  font-size: 4em; /* Adjust the size as needed */
+  font-size: 9em; /* Adjust the size as needed */
 }
 
 .content button {

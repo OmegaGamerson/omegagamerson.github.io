@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-/* You might want to target specific elements for the following styles */
+
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; /* Make the navigation links bold */
+  font-size: 20px; /* Adjust the font size to your preference */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
 
 body {
   font-family: 'Ubuntu', sans-serif;

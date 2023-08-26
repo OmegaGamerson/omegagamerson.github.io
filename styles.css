@@ -6,7 +6,7 @@ header ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: bold; /* Make the navigation links bold */
-  font-size: 40px; /* Adjust the font size to your preference */
+  font-size: 25px; /* Adjust the font size to your preference */
   transition: color 0.3s ease; /* Add a smooth color transition on hover */
 }
 

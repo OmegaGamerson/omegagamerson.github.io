@@ -7,25 +7,6 @@
     background-color: rgba(131, 3, 251, 0.273);
   }</style>
 <body>
-    <h1>OmegaVape Proxy</h1>
-    
-    <form id="proxy-form">
-        <label for="url">Enter URL:</label>
-        <input type="text" id="url" name="url" placeholder="Type Exact Form Of URL">
-        <button type="submit">Go</button>
-    </form>
-    
-    <iframe id="proxy-frame" width="100%" height="500" frameborder="0"></iframe>
-    
-    <script>
-        const proxyForm = document.getElementById("proxy-form");
-        const proxyFrame = document.getElementById("proxy-frame");
+    <h1>OmegaVape Utilities<h1>
+
         
-        proxyForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const url = document.getElementById("url").value;
-            proxyFrame.src = url;
-        });
-    </script>
-</body>
-</html>

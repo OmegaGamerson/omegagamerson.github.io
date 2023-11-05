@@ -109,7 +109,7 @@ body {
 
 #typing-text {
   font-size: 24px;
-  color: #333;
+  color: black
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;

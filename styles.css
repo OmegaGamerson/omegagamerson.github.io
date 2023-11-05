@@ -140,18 +140,3 @@ footer {
   padding: 10px;
 }
 
-/* Header styles */
-header {
-  text-align: left; /* Adjust the alignment as needed */
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-/* Footer styles */
-footer {
-  text-align: center; /* Adjust the alignment as needed */
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
